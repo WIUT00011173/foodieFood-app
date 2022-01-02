@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @import "./sections/section-1";
 
 @import "./sections/variablesMixins";
@@ -16,4 +20,12 @@ body {
 
 a {
     text-decoration: none;
+    padding: 10px 30px;
+    transition: .3s
+}
+
+.btn {
+    @include smlTxt;
+    background-color: #fff;
+    border-radius: 30px;
 }
