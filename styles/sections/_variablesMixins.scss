@@ -1,0 +1,19 @@
+$mainColor: #FE724C;
+
+@mixin bigTxt($fsize: 46px, $fcolor: #fff) {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fsize;
+    line-height: 54px;
+    color: $fcolor;
+};
+
+@mixin smlTxt{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 23px;
+    color: #FFFFFF;
+};

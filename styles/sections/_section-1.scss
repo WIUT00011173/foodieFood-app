@@ -1,0 +1,9 @@
+.sec-1 {
+    @import "./variablesMixins";
+    width: 100%;
+    height: 100vh;
+
+    header {
+        display: flex;
+    }
+}
