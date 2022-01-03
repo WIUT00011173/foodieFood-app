@@ -1,0 +1,52 @@
+.sec-2 {
+    @import "./variablesMixins";
+    display: flex;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 550px;
+    
+    h1 {
+        @include bigTxt;
+        color: #000;
+        &::after {
+            content: '';
+            width: 80px;
+            padding-top: 10px;
+            display: block;
+            border-bottom: 4px solid #EFCA08;
+        }
+    }
+    .bold {
+        @include smlTxt;
+        color: #000;
+        font-weight: 600;
+    }
+    .normal {
+        @include smlTxt;
+        color: #000;
+    }
+}
+
+.imges {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .row-1 {
+        display: flex;
+        align-items: flex-end;
+        gap: 20px;
+    }
+    .row-2 {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px   ;
+    }
+}

@@ -1,0 +1,50 @@
+.sec-3 {
+    @import "./variablesMixins";
+    display: flex;
+    gap: 100px;
+    background-color: $mainColor;
+
+    .txt-area {
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+
+        h1 {
+            @include bigTxt;
+
+            &::after {
+                content: '';
+                width: 80px;
+                display: block;
+                padding-top: 10px;
+                border-bottom: 4px solid #fff;
+            }
+        }
+        .instructions {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            > div {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                > img {
+                    padding: 30px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                }
+                .txt {
+                    width: 380px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    > p {
+                        @include smlTxt;
+                    }
+    
+                }
+            }
+        }
+    }
+}
